@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot Registration Form</title>
+</head>
+<body>
+<div align="center">
+    <h1>Spring Boot Registration Form</h1>
+
+    <form action="#" th:action="@{/register}" th:object="${user}" th:method="post">
+        <label>Full Name:</label>
+        <input type="text" th:field="*{name}"><br/>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+
+
+</body>
+</html>
